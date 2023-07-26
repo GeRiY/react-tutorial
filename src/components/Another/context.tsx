@@ -2,4 +2,4 @@ import { createContext } from 'react';
 
 interface ContextInterface {}
 
-export const MAINContext = createContext<ContextInterface>({});
+export const Context = createContext<ContextInterface>({});
