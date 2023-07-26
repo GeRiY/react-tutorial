@@ -1,0 +1,14 @@
+.interfacesAndTypes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 700px;
+  .interface {
+    color: red;
+  }
+  .type {
+    color: blue;
+  }
+}

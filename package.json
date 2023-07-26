@@ -1,0 +1,56 @@
+{
+  "name": "@makra/tutorial",
+  "version": "0.1.19",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build-main": "node scripts/build.js && node scripts/after-build.js",
+    "release:patch": "RELEASE_LEVEL=patch node scripts/version.js && node scripts/build.js && node scripts/after-build.js && npm pack --pack-destination=./versions",
+    "release:minor": "RELEASE_LEVEL=minor node scripts/version.js && node scripts/build.js && node scripts/after-build.js && npm pack --pack-destination=./versions",
+    "release:major": "RELEASE_LEVEL=major node scripts/version.js && node scripts/build.js && node scripts/after-build.js && npm pack --pack-destination=./versions"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "componentName": "tutorial",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.25",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.1",
+    "cleave.js": "^1.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.4.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4",
+    "@mui/material": "^5.2.5",
+    "@emotion/styled": "^11.7.1"
+  }
+}
