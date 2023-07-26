@@ -2,6 +2,7 @@
 .idea
 dist
 versions/*
+build
 # dependencies
 /node_modules
 /.pnp
